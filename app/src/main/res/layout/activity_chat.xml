@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whatsappback"
+    tools:context=".activities.ChatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarChats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_background">
+
+        <ImageButton
+            android:id="@+id/profile_backarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@null"
+            android:src="@drawable/backarrow" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/circle_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/masaischhol" />
+
+        <TextView
+            android:id="@+id/toolBarName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/any_name"
+            android:textColor="@color/tab_active"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="80dp"
+            android:contentDescription="@null"
+            android:src="@drawable/video" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@null"
+            android:src="@drawable/chat_call" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_more_vert_black" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/llType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/type_message"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="12dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/ic_insert_emoticon_black_24dp"
+            app:tint="@color/message_input_button_inactive" />
+
+        <EditText
+            android:id="@+id/typeMsg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="@string/type_a_message"
+            android:importantForAutofill="no"
+            android:inputType="textShortMessage"
+            android:padding="20dp" />
+
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/ic_attach_file_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/btnSendMsg"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/send_btn"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_send_black_24dp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerChatCon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llType"
+        android:layout_below="@id/toolbarChats"
+        android:layout_marginBottom="5dp" />
+
+</RelativeLayout>

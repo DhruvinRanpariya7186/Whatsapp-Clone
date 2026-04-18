@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <com.hbb20.CountryCodePicker
+        app:ccp_hintExampleNumber="true"
+        android:id="@+id/country_code_picker"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_the_phone_number"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginTop="20dp"
+        android:autofillHints="phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/et_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_the_otp"
+        android:inputType="numberPassword"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginTop="20dp"
+        android:autofillHints="password" />
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/working"
+        android:visibility="invisible"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btn_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/get_the_otp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/verify"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
