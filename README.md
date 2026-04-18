@@ -50,11 +50,7 @@ An option "Invite a friend" is also available using which the user can send a li
 
 
 ### Team 
-### | Sai Krishna      | Arbeena Khanum     | Gourav Guru    | Shivaraj Kumar Jane |
+### | Urvish Satapara     | Dhruvin Ranpariya     | 
 -----------------------------------------------------------------------------------------------------------------------------------
-### | https://github.com/krishnakorukanti | https://github.com/ArbeenaKhanum | https://github.com/gour-av | https://github.com/Shivaraj44
+### | https://github.com/Urvish-hub | https://github.com/DhruvinRanpariya7186 |
 ------------------------------------------------------------------------------------------------------------------------------------
-
-### WhatsApp clone **[Video](https://drive.google.com/file/d/138oK7YGqUUi_bd_ETYPsxw1ViGuUJ_5h/view)**
----
-### check our blog here : https://crishnakorukanti.medium.com/story-of-team-cupcake-to-build-whatsapp-clone-14524cd191ac
